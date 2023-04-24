@@ -1,10 +1,19 @@
 package training;
 
 public class Voiture extends Automobile {
-    public String marque = "Peugeot";
+    private String couleur;
+
+    public String getCouleur() {
+        return this.couleur;
+    }
+
+    public void setCouleur(String couleur) {
+        this.couleur = couleur;
+    }
+    
 
     void freiner(){
-        System.out.println("Je freine");
+        System.out.println("Je freine la voiture");
     }
     
     

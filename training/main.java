@@ -2,9 +2,19 @@ package training;
 
 public class main {
     public static void main(String[] args) {
-        Smartphone monTelephone = new Smartphone();
-        monTelephone.setMarque("Note 9");
-        System.out.println(monTelephone.getMarque());
+        Voiture maVoiture = new Voiture();
+        maVoiture.setCouleur("Bleue");
+        System.out.println("Attribut dela classe mère ==>" + maVoiture.marque);
+        System.out.println("Attribut de la classe fille ==>" + maVoiture.getCouleur());
+        maVoiture.freiner();
+        maVoiture.klaxonner();
+
+        Chien milou = new Chien();
+        Chat neko   = new Chat();
+
+        milou.criAnimal();
+        neko.criAnimal();
+
     
 }
 }
